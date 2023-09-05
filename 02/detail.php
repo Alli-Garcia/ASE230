@@ -1,5 +1,302 @@
 <?php
-// INSERT DATA HERE.
+$dogs=[
+	[
+		"profilePicture"=>"assets/images/profile.jpg",
+		"name"=>"Cody King",
+		"desiredJob"=>"Software Developer",
+		"email"=>"12314213@gmail.com",
+		"phone"=>"606-782-5551",
+		"linkedin"=>"https://www.linkedin.com/in/cody-king-32b35a231/",
+		"github"=>"https://github.com/Cjking57893",
+		"website"=>"codyking.com",
+		"summary"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"experience"=>[
+			[
+				"title"=>"Lead Developer",
+				"brand"=>"Startup Hub",
+				"years"=>"2023 - Present",
+				"description"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"achievements"=>[
+					"Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.",
+					"At vero eos et accusamus et iusto odio dignissimos.",
+					"Blanditiis praesentium voluptatum deleniti atque corrupti.",
+					"Maecenas tempus tellus eget."
+				],
+				"technologies"=>[
+					"jQuery",
+					"Webpack",
+					"HTML/SASS",
+					"PostgresSQL"
+				]
+			]
+		],
+		"skills"=>[
+			"Angular",
+			"Node.js",
+			"React",
+			"JavaScript"
+		],
+		"others"=>[
+			"Wireframing",
+			"Git",
+			"Unit Testing",
+			"Balsamiq",
+			"Shopify"
+		],
+		"education"=>[
+			[
+				"name"=>"ASc in Information Technology",
+				"college"=>"Maysville Community and Technical College",
+				"years"=>"2020 - 2023"
+			]
+		],
+		"awards"=>[
+			[
+				"name"=>"Woodmen scholarship",
+				"description"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+			]
+		],
+		"languages"=>[
+			[
+				"name"=>"English",
+				"type"=>"Native"
+			]
+		],
+		"interests"=>[
+			"Climbing",
+			"Snowboarding",
+			"Cooking"
+		],
+		"projects"=>[
+			"img"=>"https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg",
+			"name"=>"Project Name",
+			"description"=>"Project description for your project",
+			"link"=>"https://github.com/Cjking57893/ASE230-Assignment01"
+		]
+	],
+	[
+		"profilePicture"=>"assets/images/profile.jpg",
+		"name"=>"Dillon Beckerich",
+		"desiredJob"=>"",
+		"email"=>"",
+		"phone"=>"",
+		"linkedin"=>"",
+		"github"=>"",
+		"website"=>"",
+		"summary"=>"",
+		"experience"=>[
+			[
+				"title"=>"",
+				"brand"=>"",
+				"years"=>"",
+				"description"=>"",
+				"achievements"=>[
+					"",
+					"",
+					"",
+					""
+				],
+				"technologies"=>[
+					"",
+					"",
+					"",
+					""
+				]
+			]
+		],
+		"skills"=>[
+			"",
+			"",
+			"",
+			""
+		],
+		"others"=>[
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"education"=>[
+			[
+				"name"=>"",
+				"college"=>"",
+				"years"=>""
+			]
+		],
+		"awards"=>[
+			[
+				"name"=>"",
+				"description"=>""
+			]
+		],
+		"languages"=>[
+			[
+				"name"=>"",
+				"type"=>""
+			]
+		],
+		"interests"=>[
+			"",
+			"",
+			""
+		],
+		"projects"=>[
+			"img"=>"",
+			"name"=>"",
+			"description"=>"",
+			"link"=>""
+		]
+	],
+	[
+		"profilePicture"=>"assets/images/profile.jpg",
+		"name"=>"Alli Garcia",
+		"desiredJob"=>"",
+		"email"=>"",
+		"phone"=>"",
+		"linkedin"=>"",
+		"github"=>"",
+		"website"=>"",
+		"summary"=>"",
+		"experience"=>[
+			[
+				"title"=>"",
+				"brand"=>"",
+				"years"=>"",
+				"description"=>"",
+				"achievements"=>[
+					"",
+					"",
+					"",
+					""
+				],
+				"technologies"=>[
+					"",
+					"",
+					"",
+					""
+				]
+			]
+		],
+		"skills"=>[
+			"",
+			"",
+			"",
+			""
+		],
+		"others"=>[
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"education"=>[
+			[
+				"name"=>"",
+				"college"=>"",
+				"years"=>""
+			]
+		],
+		"awards"=>[
+			[
+				"name"=>"",
+				"description"=>""
+			]
+		],
+		"languages"=>[
+			[
+				"name"=>"",
+				"type"=>""
+			]
+		],
+		"interests"=>[
+			"",
+			"",
+			""
+		],
+		"projects"=>[
+			"img"=>"",
+			"name"=>"",
+			"description"=>"",
+			"link"=>""
+		]
+	],
+	[
+		"profilePicture"=>"assets/images/profile.jpg",
+		"name"=>"Kori Mcclure",
+		"desiredJob"=>"",
+		"email"=>"",
+		"phone"=>"",
+		"linkedin"=>"",
+		"github"=>"",
+		"website"=>"",
+		"summary"=>"",
+		"experience"=>[
+			[
+				"title"=>"",
+				"brand"=>"",
+				"years"=>"",
+				"description"=>"",
+				"achievements"=>[
+					"",
+					"",
+					"",
+					""
+				],
+				"technologies"=>[
+					"",
+					"",
+					"",
+					""
+				]
+			]
+		],
+		"skills"=>[
+			"",
+			"",
+			"",
+			""
+		],
+		"others"=>[
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"education"=>[
+			[
+				"name"=>"",
+				"college"=>"",
+				"years"=>""
+			]
+		],
+		"awards"=>[
+			[
+				"name"=>"",
+				"description"=>""
+			]
+		],
+		"languages"=>[
+			[
+				"name"=>"",
+				"type"=>""
+			]
+		],
+		"interests"=>[
+			"",
+			"",
+			""
+		],
+		"projects"=>[
+			"img"=>"",
+			"name"=>"",
+			"description"=>"",
+			"link"=>""
+		]
+	]
+];
 
 ?>
 <!DOCTYPE html>
@@ -40,7 +337,7 @@
 				    <div class="col">
 					    <div class="row p-4 justify-content-center justify-content-md-between">
 						    <div class="primary-info col-auto">
-							    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">Your name</h1>
+							    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase"><?= $dogs[$_GET["index"]]['name'] ?></h1>
 							    <div class="title mb-3">Your desired job title</div>
 							    <ul class="list-unstyled">
 								    <li class="mb-2"><a class="text-link" href="#"><i class="far fa-envelope fa-fw me-2" data-fa-transform="grow-3"></i>your@email.com</a></li>
