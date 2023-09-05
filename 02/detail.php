@@ -1,5 +1,5 @@
 <?php
-$dogs = [
+$members = [
 	[
 		"profilePicture" => "assets/images/profile.jpg",
 		"name" => "Cody King",
@@ -76,25 +76,24 @@ $dogs = [
 	],
 	[
 		"profilePicture" => "assets/images/profile.jpg",
-		"name" => "Dillon Beckerich",
+		"name" => "Billon Deckerich",
 		"desiredJob" => "Cybersecurity Specialist",
-		"email" => "dbeckerich@outlook.com",
-		"phone" => "859-242-9111",
-		"linkedin" => "",
-		"github" => "",
-		"website" => "",
-		"summary" => "",
-		"experience" => [
+		"email" => "bdeckrick@outlook.com",
+		"phone" => "555-242-9113",
+		"linkedin" => "https://www.linkedin.com/in/dillon-beckerich",
+		"github" => "https://github.com/NoirJazz",
+		"summary" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"volunteer experience" => [
 			[
-				"title" => "",
-				"brand" => "",
-				"years" => "",
-				"description" => "",
+				"title" => "Friend's of the Library helper",
+				"group" => "Kenton County Public Library",
+				"years" => "2018 - Present",
+				"description" => "Set up of booksale - The movement and organization of books. The Kenton County Friends of the Library organize a booksale, with all proceeds going to the library for community events.",
 				"achievements" => [
-					"",
-					"",
-					"",
-					""
+					"Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+					"Over $5,000 dollars raised in 2023 so far.",
+					"The quick brown fox jumped over the lazy dog.",
+
 				],
 				"technologies" => [
 					"",
@@ -105,23 +104,23 @@ $dogs = [
 			]
 		],
 		"skills" => [
-			"",
-			"",
-			"",
-			""
+			"Python",
+			"Linux",
+			">HTML/CSS",
+			"ctl+c , ctrl+ v"
 		],
 		"others" => [
-			"",
-			"",
-			"",
-			"",
-			""
+			"Sleuth Kit/Autopsy",
+			"Wireshark",
+			"Nmap",
+			"Windows",
+			"Kali Linux"
 		],
 		"education" => [
 			[
-				"name" => "",
-				"college" => "",
-				"years" => ""
+				"degree" => "Masters degree in underwater basket weaving",
+				"college" => "Havad",
+				"years" => "1993 - 1998"
 			]
 		],
 		"awards" => [
@@ -132,14 +131,14 @@ $dogs = [
 		],
 		"languages" => [
 			[
-				"name" => "",
-				"type" => ""
+				"name" => "English",
+				"type" => "Native speaker"
 			]
 		],
 		"interests" => [
-			"",
-			"",
-			""
+			"Vintage Computers",
+			"Playing Cards",
+			"Metrology"
 		],
 		"projects" => [
 			"img" => "",
@@ -339,7 +338,7 @@ $dogs = [
 						<div class="row p-4 justify-content-center justify-content-md-between">
 							<div class="primary-info col-auto">
 								<h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">
-									<?= $dogs[$_GET["index"]]['name'] ?>
+									<?= $members[$_GET["index"]]['name'] ?>
 								</h1>
 								<div class="title mb-3">Your desired job title</div>
 								<ul class="list-unstyled">
@@ -519,7 +518,8 @@ $dogs = [
 										<div class="resume-timeline-item-header mb-2">
 											<div class="d-flex flex-column flex-md-row">
 												<h3 class="resume-position-title font-weight-bold mb-1">Web Developer
-													<small class="text-muted">(Intern)</small></h3>
+													<small class="text-muted">(Intern)</small>
+												</h3>
 												<div class="resume-company-name ms-auto">Amazon</div>
 											</div><!--//row-->
 											<div class="resume-position-time">2014 - 2015</div>
@@ -674,7 +674,8 @@ $dogs = [
 							<div class="resume-section-content">
 								<ul class="list-unstyled resume-lang-list">
 									<li class="mb-2"><span class="resume-lang-name font-weight-bold">English</span>
-										<small class="text-muted font-weight-normal">(Native)</small></li>
+										<small class="text-muted font-weight-normal">(Native)</small>
+									</li>
 									<li class="mb-2 align-middle"><span
 											class="resume-lang-name font-weight-bold">French</span> <small
 											class="text-muted font-weight-normal">(Professional)</small></li>
