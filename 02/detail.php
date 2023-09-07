@@ -566,47 +566,20 @@ $members = [
 							<div class="resume-section-content">
 								<div class="resume-skill-item">
 									<ul class="list-unstyled mb-4">
-										<li class="mb-2">
-											<div class="resume-skill-name">Angular</div>
-											<div class="progress resume-progress">
-												<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 98%" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-											</div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">React</div>
-											<div class="progress resume-progress">
-												<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 94%" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-											</div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">JavaScript</div>
-											<div class="progress resume-progress">
-												<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 96%" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-											</div>
-										</li>
-
-										<li class="mb-2">
-											<div class="resume-skill-name">Node.js</div>
-											<div class="progress resume-progress">
-												<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 92%" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-											</div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">HTML/CSS/SASS/LESS</div>
-											<div class="progress resume-progress">
-												<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 96%" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-											</div>
-										</li>
+										<?php
+										// Loop that goes through skills array and adds list item for each skill.
+										for ($i = 0; $i < count($members[$_GET["index"]]['skills']); $i++) {
+											echo
+												'<li class="mb-2">
+													<div class="resume-skill-name">' . $members[$_GET["index"]]['skills'][$i] . '</div>
+													<div class="progress resume-progress">
+														<div class="progress-bar theme-progress-bar-dark" role="progressbar"
+															style="width: 98%" aria-valuenow="25" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div>
+												</li>';
+										}
+										?>
 									</ul>
 								</div><!--//resume-skill-item-->
 								<div class="resume-skill-item">
