@@ -652,9 +652,13 @@ $members = [
 							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
 							<div class="resume-section-content">
 								<ul class="list-unstyled">
-									<li class="mb-1">Climbing</li>
-									<li class="mb-1">Snowboarding</li>
-									<li class="mb-1">Cooking</li>
+									<?php
+										// Loop that goes through interests array for member and adds interest item for each interest.
+										for ($i = 0; $i < count($members[$_GET["index"]]['interests']); $i++) {
+											echo
+												'<li class="mb-1">' . $members[$_GET["index"]]['interests'][$i] . '</li>';
+										}
+									?>
 								</ul>
 							</div>
 						</section><!--//interests-section-->
