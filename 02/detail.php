@@ -567,7 +567,7 @@ $members = [
 								<div class="resume-skill-item">
 									<ul class="list-unstyled mb-4">
 										<?php
-										// Loop that goes through skills array and adds list item for each skill.
+										// Loop that goes through skills array for member and adds list item for each skill.
 										for ($i = 0; $i < count($members[$_GET["index"]]['skills']); $i++) {
 											echo
 												'<li class="mb-2">
@@ -585,20 +585,12 @@ $members = [
 								<div class="resume-skill-item">
 									<h4 class="resume-skills-cat font-weight-bold">Others</h4>
 									<ul class="list-inline">
-										<li class="list-inline-item"><span class="badge badge-light">DevOps</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">Code Review</span>
-										</li>
-										<li class="list-inline-item"><span class="badge badge-light">Git</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">Unit Testing</span>
-										</li>
-										<li class="list-inline-item"><span class="badge badge-light">Wireframing</span>
-										</li>
-										<li class="list-inline-item"><span class="badge badge-light">Sketch</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">Balsamiq</span>
-										</li>
-										<li class="list-inline-item"><span class="badge badge-light">WordPress</span>
-										</li>
-										<li class="list-inline-item"><span class="badge badge-light">Shopify</span></li>
+										<?php
+											// Loop that goes through others array for member and adds list item for each other item.
+											for ($i = 0; $i < count($members[$_GET["index"]]['others']); $i++) {
+												echo '<li class="list-inline-item"><span class="badge badge-light">' . $members[$_GET["index"]]['others'][$i] . '</span></li>';
+											}
+										?>
 									</ul>
 								</div><!--//resume-skill-item-->
 							</div><!--resume-section-content-->
