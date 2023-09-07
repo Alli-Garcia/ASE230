@@ -586,10 +586,10 @@ $members = [
 									<h4 class="resume-skills-cat font-weight-bold">Others</h4>
 									<ul class="list-inline">
 										<?php
-											// Loop that goes through others array for member and adds list item for each other item.
-											for ($i = 0; $i < count($members[$_GET["index"]]['others']); $i++) {
-												echo '<li class="list-inline-item"><span class="badge badge-light">' . $members[$_GET["index"]]['others'][$i] . '</span></li>';
-											}
+										// Loop that goes through others array for member and adds list item for each other item.
+										for ($i = 0; $i < count($members[$_GET["index"]]['others']); $i++) {
+											echo '<li class="list-inline-item"><span class="badge badge-light">' . $members[$_GET["index"]]['others'][$i] . '</span></li>';
+										}
 										?>
 									</ul>
 								</div><!--//resume-skill-item-->
@@ -600,15 +600,15 @@ $members = [
 							<div class="resume-section-content">
 								<ul class="list-unstyled">
 									<?php
-										// Loop that goes through education array for member and adds education item for each degree.
-										for ($i = 0; $i < count($members[$_GET["index"]]['education']); $i++) {
-											echo
-												'<li>
+									// Loop that goes through education array for member and adds education item for each degree.
+									for ($i = 0; $i < count($members[$_GET["index"]]['education']); $i++) {
+										echo
+											'<li>
 													<div class="resume-degree font-weight-bold">' . $members[$_GET["index"]]['education'][$i]['degree'] . '</div>
 													<div class="resume-degree-org">' . $members[$_GET["index"]]['education'][$i]['college'] . '</div>
 													<div class="resume-degree-time">' . $members[$_GET["index"]]['education'][$i]['years'] . '</div>
 												</li>';
-										}
+									}
 									?>
 								</ul>
 							</div>
@@ -618,16 +618,16 @@ $members = [
 							<div class="resume-section-content">
 								<ul class="list-unstyled resume-awards-list">
 									<?php
-										// Loop that goes through awards array for member and adds award item for each award.
-										for ($i = 0; $i < count($members[$_GET["index"]]['awards']); $i++) {
-											echo
-												'<li class="mb-0 ps-4 position-relative">
+									// Loop that goes through awards array for member and adds award item for each award.
+									for ($i = 0; $i < count($members[$_GET["index"]]['awards']); $i++) {
+										echo
+											'<li class="mb-0 ps-4 position-relative">
 													<i class="resume-award-icon fas fa-trophy position-absolute"
 														data-fa-transform="shrink-2"></i>
 												<div class="resume-award-name">' . $members[$_GET["index"]]['awards'][$i]['name'] . '</div>
 												<div class="resume-award-desc">' . $members[$_GET["index"]]['awards'][$i]['description'] . '</div>
 												</li>';
-										}
+									}
 									?>
 								</ul>
 							</div>
@@ -636,14 +636,15 @@ $members = [
 							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Languages</h2>
 							<div class="resume-section-content">
 								<ul class="list-unstyled resume-lang-list">
-									<li class="mb-2"><span class="resume-lang-name font-weight-bold">English</span>
-										<small class="text-muted font-weight-normal">(Native)</small>
-									</li>
-									<li class="mb-2 align-middle"><span
-											class="resume-lang-name font-weight-bold">French</span> <small
-											class="text-muted font-weight-normal">(Professional)</small></li>
-									<li><span class="resume-lang-name font-weight-bold">Spanish</span> <small
-											class="text-muted font-weight-normal">(Professional)</small></li>
+									<?php
+										// Loop that goes through languages array for member and adds language item for each language.
+										for ($i = 0; $i < count($members[$_GET["index"]]['languages']); $i++) {
+											echo
+												'<li class="mb-2 align-middle"><span
+													class="resume-lang-name font-weight-bold">' . $members[$_GET["index"]]['languages'][$i]['name'] . '</span> <small
+													class="text-muted font-weight-normal"> (' . $members[$_GET["index"]]['languages'][$i]['type'] . ') </small></li>';
+										}
+									?>
 								</ul>
 							</div>
 						</section><!--//language-section-->
