@@ -45,7 +45,7 @@ $members = [
 		],
 		"education" => [
 			[
-				"name" => "ASc in Information Technology",
+				"degree" => "ASc in Information Technology",
 				"college" => "Maysville Community and Technical College",
 				"years" => "2020 - 2023"
 			]
@@ -192,7 +192,7 @@ $members = [
 		],
 		"education" => [
 			[
-				"name" => "",
+				"degree" => "",
 				"college" => "",
 				"years" => ""
 			]
@@ -266,7 +266,7 @@ $members = [
 		],
 		"education" => [
 			[
-				"name" => "",
+				"degree" => "",
 				"college" => "",
 				"years" => ""
 			]
@@ -599,16 +599,17 @@ $members = [
 							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
 							<div class="resume-section-content">
 								<ul class="list-unstyled">
-									<li class="mb-2">
-										<div class="resume-degree font-weight-bold">MSc in Computer Science</div>
-										<div class="resume-degree-org">University College London</div>
-										<div class="resume-degree-time">2013 - 2014</div>
-									</li>
-									<li>
-										<div class="resume-degree font-weight-bold">BSc Maths and Physics</div>
-										<div class="resume-degree-org">Imperial College London</div>
-										<div class="resume-degree-time">2010 - 2013</div>
-									</li>
+									<?php
+										// Loop that goes through education array for member and adds education item for each degree.
+										for ($i = 0; $i < count($members[$_GET["index"]]['education']); $i++) {
+											echo
+												'<li>
+													<div class="resume-degree font-weight-bold">' . $members[$_GET["index"]]['education'][$i]['degree'] . '</div>
+													<div class="resume-degree-org">' . $members[$_GET["index"]]['education'][$i]['college'] . '</div>
+													<div class="resume-degree-time">' . $members[$_GET["index"]]['education'][$i]['years'] . '</div>
+												</li>';
+										}
+									?>
 								</ul>
 							</div>
 						</section><!--//education-section-->
