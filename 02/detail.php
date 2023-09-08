@@ -13,7 +13,7 @@ $members = [
 		"experience" => [
 			[
 				"title" => "Lead Developer",
-				"brand" => "Startup Hub",
+				"organization" => "Startup Hub",
 				"years" => "2023 - Present",
 				"description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 				"achievements" => [
@@ -91,10 +91,10 @@ $members = [
 		"linkedin" => "https://www.linkedin.com/in/dillon-beckerich",
 		"github" => "https://github.com/NoirJazz",
 		"summary" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"volunteer experience" => [
+		"experience" => [
 			[
 				"title" => "Friend's of the Library helper",
-				"group" => "Kenton County Public Library",
+				"organization" => "Kenton County Public Library",
 				"years" => "2018 - Present",
 				"description" => "Set up of booksale - The movement and organization of books. The Kenton County Friends of the Library organize a booksale, with all proceeds going to the library for community events.",
 				"achievements" => [
@@ -168,7 +168,7 @@ $members = [
 		"experience" => [
 			[
 				"title" => "",
-				"brand" => "",
+				"organization" => "",
 				"years" => "",
 				"description" => "",
 				"achievements" => [
@@ -242,7 +242,7 @@ $members = [
 		"experience" => [
 			[
 				"title" => "",
-				"brand" => "",
+				"organization" => "",
 				"years" => "",
 				"description" => "",
 				"achievements" => [
@@ -398,172 +398,54 @@ $members = [
 							</h2>
 							<div class="resume-section-content">
 								<div class="resume-timeline position-relative">
-									<article class="resume-timeline-item position-relative pb-5">
+
+									<?php
+									// Loop that goes through skills array for member and adds list item for each skill.
+									for ($i = 0; $i < count($members[$_GET["index"]]['experience']); $i++) {
+										echo
+											'<article class="resume-timeline-item position-relative pb-5">
 
 										<div class="resume-timeline-item-header mb-2">
 											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Lead Developer
-												</h3>
-												<div class="resume-company-name ms-auto">Startup Hub</div>
+												<h3 class="resume-position-title font-weight-bold mb-1">' . $members[$_GET["index"]]['experience'][$i]['title'] .
+											'</h3>
+												<div class="resume-company-name ms-auto">' . $members[$_GET["index"]]['experience'][$i]['organization'] . '</div>
 											</div><!--//row-->
-											<div class="resume-position-time">2023 - Present</div>
+											<div class="resume-position-time">' . $members[$_GET["index"]]['experience'][$i]['years'] . '</div>
 										</div><!--//resume-timeline-item-header-->
 										<div class="resume-timeline-item-desc">
-											<p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing
-												elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-												penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-												quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec
-												pede justo, fringilla vel.</p>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:
-											</h4>
-											<p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas
-												molestias excepturi sint occaecati cupiditate non provident.</p>
-											<ul>
-												<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-												<li>At vero eos et accusamus et iusto odio dignissimos.</li>
-												<li>Blanditiis praesentium voluptatum deleniti atque corrupti.</li>
-												<li>Maecenas tempus tellus eget.</li>
-											</ul>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
-												used:</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">Angular</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">Python</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">jQuery</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">Webpack</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">HTML/SASS</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">PostgresSQL</span></li>
-											</ul>
-										</div><!--//resume-timeline-item-desc-->
+											<p>' . $members[$_GET["index"]]['experience'][$i]['description'] . '</p>';
+										// Adds achievements section only if there are any achievements for that experience.
+										if (array_key_exists('achievements', $members[$_GET["index"]]['experience'][$i])) {
+											echo
+												'<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
+												 <ul>';
+											// Loops through achievements for that experience and adds to page.
+											for ($j = 0; $j < count($members[$_GET["index"]]['experience'][$i]['achievements']); $j++) {
+												echo '<li>' . $members[$_GET["index"]]['experience'][$i]['achievements'][$j] . '</li>';
+											}
+											echo
+												'</ul>';
+										}
+										// Adds technologies used section only if there are any technologies used for that experience.
+										if (array_key_exists('technologies', $members[$_GET["index"]]['experience'][$i])) {
+											echo
+												'<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+												<ul class="list-inline">';
+											// Loops through technologies for that experience and adds to page.
+											for ($j = 0; $j < count($members[$_GET["index"]]['experience'][$i]['technologies']); $j++) {
+												echo '<li class="list-inline-item"><span class="badge bg-secondary badge-pill">' . $members[$_GET["index"]]['experience'][$i]['technologies'][$j] . '</span></li>';
+											}
+											echo
+												'</ul>';
+										}
+										echo
+											'</div><!--//resume-timeline-item-desc-->
 
-									</article><!--//resume-timeline-item-->
-
-									<article class="resume-timeline-item position-relative pb-5">
-
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Senior Software
-													Developer</h3>
-												<div class="resume-company-name ms-auto">Google</div>
-											</div><!--//row-->
-											<div class="resume-position-time">2019 - 2023</div>
-										</div><!--//resume-timeline-item-header-->
-										<div class="resume-timeline-item-desc">
-											<p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing
-												elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-												penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-												quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec
-												pede justo, fringilla vel.</p>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements
-											</h4>
-											<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-												ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-												quis, sem.</p>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
-												used:</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">React</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">Redux</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">Django</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">Webpack</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">HTML/SASS</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">MySQL</span></li>
-											</ul>
-										</div><!--//resume-timeline-item-desc-->
-
-									</article><!--//resume-timeline-item-->
-
-									<article class="resume-timeline-item position-relative pb-5">
-
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Co-Founder &
-													Lead Developer</h3>
-												<div class="resume-company-name ms-auto">To-do Lists</div>
-											</div><!--//row-->
-											<div class="resume-position-time">2015 - 2019</div>
-										</div><!--//resume-timeline-item-header-->
-										<div class="resume-timeline-item-desc">
-											<p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing
-												elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-												penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-												quam felis, ultricies nec.</p>
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-												ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-												dis parturient montes.</p>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
-												used:</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">Django</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">JavaScript</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">Node.js</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">Require.js</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">HTML/SASS</span></li>
-											</ul>
-										</div><!--//resume-timeline-item-desc-->
-
-									</article><!--//resume-timeline-item-->
-
-									<article class="resume-timeline-item position-relative">
-
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Web Developer
-													<small class="text-muted">(Intern)</small>
-												</h3>
-												<div class="resume-company-name ms-auto">Amazon</div>
-											</div><!--//row-->
-											<div class="resume-position-time">2014 - 2015</div>
-										</div><!--//resume-timeline-item-header-->
-										<div class="resume-timeline-item-desc">
-											<p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing
-												elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-												penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-												quam felis, ultricies nec. Fusce vulputate eleifend sapien. Vestibulum
-												purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam
-												accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
-												Vestibulum.</p>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
-												used:</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">Ruby on Rails</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">jQuery</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">HTML/LESS</span></li>
-												<li class="list-inline-item"><span
-														class="badge bg-secondary badge-pill">MongoDB</span></li>
-											</ul>
-										</div><!--//resume-timeline-item-desc-->
-
-									</article><!--//resume-timeline-item-->
-
-
+									</article><!--//resume-timeline-item-->';
+									}
+									?>
 								</div><!--//resume-timeline-->
-
-
-
-
-
-
 							</div>
 						</section><!--//projects-section-->
 					</div>
@@ -645,13 +527,13 @@ $members = [
 							<div class="resume-section-content">
 								<ul class="list-unstyled resume-lang-list">
 									<?php
-										// Loop that goes through languages array for member and adds language item for each language.
-										for ($i = 0; $i < count($members[$_GET["index"]]['languages']); $i++) {
-											echo
-												'<li class="mb-2 align-middle"><span
+									// Loop that goes through languages array for member and adds language item for each language.
+									for ($i = 0; $i < count($members[$_GET["index"]]['languages']); $i++) {
+										echo
+											'<li class="mb-2 align-middle"><span
 													class="resume-lang-name font-weight-bold">' . $members[$_GET["index"]]['languages'][$i]['name'] . '</span> <small
 													class="text-muted font-weight-normal"> (' . $members[$_GET["index"]]['languages'][$i]['type'] . ') </small></li>';
-										}
+									}
 									?>
 								</ul>
 							</div>
@@ -661,11 +543,11 @@ $members = [
 							<div class="resume-section-content">
 								<ul class="list-unstyled">
 									<?php
-										// Loop that goes through interests array for member and adds interest item for each interest.
-										for ($i = 0; $i < count($members[$_GET["index"]]['interests']); $i++) {
-											echo
-												'<li class="mb-1">' . $members[$_GET["index"]]['interests'][$i] . '</li>';
-										}
+									// Loop that goes through interests array for member and adds interest item for each interest.
+									for ($i = 0; $i < count($members[$_GET["index"]]['interests']); $i++) {
+										echo
+											'<li class="mb-1">' . $members[$_GET["index"]]['interests'][$i] . '</li>';
+									}
 									?>
 								</ul>
 							</div>
@@ -677,10 +559,10 @@ $members = [
 					<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Projects</h2>
 					<div class="row mt-4">
 						<?php
-							// Loop that goes through projects array for member and adds project card for each project.
-							for ($i = 0; $i < count($members[$_GET["index"]]['projects']); $i++) {
-								echo
-									'<div class="col-md-4">
+						// Loop that goes through projects array for member and adds project card for each project.
+						for ($i = 0; $i < count($members[$_GET["index"]]['projects']); $i++) {
+							echo
+								'<div class="col-md-4">
 										<div class="card">
 											<img src="path-to-project-image2.jpg" alt="Project 2" class="card-img-top">
 											<div class="card-body">
@@ -690,8 +572,8 @@ $members = [
 											</div>
 										</div>
 									</div>';
-							}
-						?>	
+						}
+						?>
 					</div>
 				</section><!--//projects-section-->
 			</div><!--//resume-body-->
