@@ -7,32 +7,28 @@ $team=[
 		'name'=>'Kori McClure',		
 		'role'=>'C.E.F.U.B.A.R.',
 		'secondaryInfo'=>'filler',
-		'profile'=>'filler'
-		// previous code 'link'=>'http://localhost/nku/ase230/02/02/detail.php'
+		'profile'=>'filler'		
 	],
 	[
 		'photo'=>'assets/images/profile1.jpg',
 		'name'=>'Alli Garcia',
 		'role'=>'filler',
 		'secondaryInfo'=>'filler',
-		'profile'=>'filler'
-		//'link'=>'assets/member/detail.php'
+		'profile'=>'filler'		
 	],
 	[
 		'photo'=>'assets/images/profile2.jpg',
 		'name'=>'Cody King',
 		'role'=>'filler',
 		'secondaryInfo'=>'filler',
-		'profile'=>'filler'
-		//'link'=>'assets/member/detail.php'
+		'profile'=>'filler'		
 	],
 	[
 		'photo'=>'assets/images/profile3.jpg',
 		'name'=>'Dillon Beckerich',
 		'role'=>'filler',
 		'secondaryInfo'=>'filler',
-		'profile'=>'filler'
-		//'link'=>'assets/member/detail.php'		
+		'profile'=>'filler'			
 	],
 ];
 
@@ -68,26 +64,25 @@ $team=[
 			<h1 class="py-4 text-center">OUR AMAZING TEAM</h1>
 			
 			<?php for($i=0;$i<count($team);$i++){
-				echo '<header class="resume-header pt-4 pt-md-0">';
-					echo '<div class="row">';
-						echo '<div class="col-block col-md-auto resume-picture-holder text-center text-md-start">';
-							echo '<img class="picture" src="'.$team[$i]['photo'].'" alt="'.$team[$i]['name'].'">';//to do:add source in php
-						echo '</div>';//<!--//col-->
-						echo '<div class="col">';
-							echo '<div class="row p-4 justify-content-center justify-content-md-between">';
-								echo '<div class="primary-info col-auto">';
-									echo '<h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">'.$team[$i]['name'].'</h1>';//name line
-									echo '<div class="title mb-3">'.$team[$i]['role'].'</div>';//role line
-									echo '<a href='/*I know the third question goes here but i need to find this*/' class="btn btn-secondary">'.$team[$i]['profile'].'</a>';//Link the index page to the detail page using a different GET value for each person
-								echo '</div>';//<!--//primary-info-->
-								echo '<div class="secondary-info col-auto mt-2">'.$team[$i]['secondaryInfo'].'</div>';//<!--//secondary-info-->
-							echo '</div>';//<!--//row-->					    
-						echo '</div>';//<!--//col-->
-						
-					echo '</div>';//<!--//row-->
-				echo '</header>';
-				echo '<br>';
-			}?>
+                echo '<header class="resume-header pt-4 pt-md-0">
+                     <div class="row">
+                         <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
+                             <img class="picture" src="'.$team[$i]['photo'].'" alt="'.$team[$i]['name'].'"><!--//to do:add source in php-->
+                         </div><!--//col-->
+                         <div class="col">
+                             <div class="row p-4 justify-content-center justify-content-md-between">
+                                 <div class="primary-info col-auto">
+                                     <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">'.$team[$i]['name'].'</h1><!--//name line-->
+                                     <div class="title mb-3">'.$team[$i]['role'].'</div><!--//role line-->
+                                     <a href=detail.php?index='.$i.' class="btn btn-secondary">'.$team[$i]['profile'].'</a><!--//Link the index page to the detail page using a different GET value for each person-->
+                                 </div><!--//primary-info-->
+                                 <div class="secondary-info col-auto mt-2">'.$team[$i]['secondaryInfo'].'</div><!--//secondary-info-->
+                             </div><!--//row-->
+                         </div><!--//col-->
+                     </div><!--//row-->
+                 </header>
+                 <br>';
+            }?>
 			
 		    <!--original element code
 		    <header class="resume-header mt-4 pt-4 pt-md-0">
