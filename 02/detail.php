@@ -77,131 +77,142 @@ $members = [
 	[
 		'profilePicture' => 'assets/images/profile.jpg',
 		'name' => 'Alli Garcia',
-		'desiredJob' => '',
-		'email' => '',
-		'phone' => '',
-		'linkedin' => '',
-		'github' => '',
-		'website' => '',
-		'summary' => '',
+		'desiredJob' => 'Digital Technology Intern',
+		'email' => 'garciaa12@mymail.nku.edu',
+		'phone' => '+1(513)-302-3689',
+		'linkedin' => 'linkedin.com/in/alli-garcia',
+		'github' => 'github.com/Alli-Garcia',
+		'website' => 'github.com/Alli-Garcia',
+		'summary' => 'Aspiring Software Engineer/Programmer with skills in the latest version of Python, as well as Java and JavaScript. Has experience in full stack development and has worked in Excel. Looking for an internship in the Greater Cincinnati region. A great people-person and team player and currently on the Dean\'s List at NKU. Able to work fully remote, hybrid, or in-office positions.',
 		'experience' => [
 			[
-				'title' => '',
-				'organization' => '',
-				'years' => '',
-				'description' => '',
-				'achievements' => [
-					'',
-					'',
-					'',
-					''
-				],
+				'title' => 'Digital Technology Intern',
+				'organization' => 'GE Aerospace',
+				'years' => 'May 2023 - August 2023',
+				'description' => 'My first internship, working with the DES team, I used skills such as Python and Excel. I became proficient in monitoring and collecting data in virtual machines and troubleshooting virtual machines. Work environment was a hybrid at home/online experience.',
 				'technologies' => [
-					'',
-					'',
-					'',
-					''
+					'Python',
+					'ControlUp',
+					'Excel',
+					'VMware Horizon Client'
 				]
 			]
 		],
 		'skills' => [
-			'',
-			'',
-			'',
-			''
+			'Python',
+			'Java',
+			'JavaScript',
+			'Node.js',
+			'HTML/CSS'
 		],
 		'others' => [
-			'',
-			'',
-			'',
-			'',
-			''
+			'Github',
+			'MongoDB'
 		],
 		'education' => [
 			[
-				'degree' => '',
-				'college' => '',
-				'years' => ''
+				'degree' => 'Bachelor of Science: Applied Software Engineering',
+				'college' => 'Northern Kentucky University',
+				'years' => '2021 - 2025'
 			]
 		],
 		'awards' => [
 			[
-				'name' => '',
-				'description' => ''
+				'name' => 'Award Name Lorem',
+				'description' => 'Award desc goes here, ultricies nec, pellentesque eu, pretium quis, sem. Nulia consequat massa quis enim. Donec pede justo.'
+			],
+			[
+				'name' => 'Award Name Ipsum',
+				'description' => 'Award desc goes here, ultricies nec, pellentesque.'
 			]
 		],
 		'languages' => [
 			[
-				'name' => '',
-				'type' => ''
+				'name' => 'English',
+				'type' => 'Primary'
+			],
+			[	
+				'name' => 'Spanish',
+				'type' => 'Secondary'
 			]
 		],
 		'interests' => [
-			'',
-			'',
-			''
+			'Skateboarding',
+			'Listening to music',
+			'Cooking',
+			'Crocheting'
 		],
 		'projects' => [
-			'img' => '',
-			'name' => '',
-			'description' => '',
-			'link' => ''
+			[
+				'img' => '',
+				'name' => 'Full Stack Development Project',
+				'description' => 'With a team, we created a made-up blog site about internships. The concept was for users to write and edit blogs as well as network to find internships. The project used tools such as MongoDB, Github, and Bootstrap. The project also required knowledge in JavaScript, HTML, and CSS, as well as knowledge about databases.',
+				'link' => ''
+			],
+			[
+				'img' => '',
+				'name' => 'Object Oriented Java Project',
+				'description' => 'The purpose of this assignment was to understand how to pass methods in Java. The program asked a user to enter the numebr of items in a list and then list those items as integers. The program then gave the user the average, standard deviation, the number of items less than the average, and stated whether the list was ordered.',
+				'link' => ''
+			],
+			[
+				'img' => '',
+				'name' => 'ASE220 Personal Webpage',
+				'description' => 'A personal webpage to practice HTML and CSS.',
+				'link' => ''
+			],
 		]
 	],
 	[
 		'profilePicture' => 'assets/images/profile2.jpg',
 		'name' => 'Cody King',
-		'desiredJob' => 'Software Developer',
-		'email' => '12314213@gmail.com',
+		'desiredJob' => 'Software Engineer',
+		'email' => 'cody.king04@outlook.com',
 		'phone' => '606-782-5551',
 		'linkedin' => 'https://www.linkedin.com/in/cody-king-32b35a231/',
 		'github' => 'https://github.com/Cjking57893',
-		'website' => 'codyking.com',
-		'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		'website' => 'https://cjking57893.github.io/personal-website/',
+		'summary' => 'Currently I\'m attending Northern Kentucky University with major in Applied Software Engineering. I transferred from a community college after getting my Associate\'s degree. \n\n Some languages I\'m proficient in are C#, Javascript, and HTML & CSS. I also have experience using Git and Github.',
 		'experience' => [
 			[
-				'title' => 'Lead Developer',
-				'organization' => 'Startup Hub',
-				'years' => '2023 - Present',
-				'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				'achievements' => [
-					'Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.',
-					'At vero eos et accusamus et iusto odio dignissimos.',
-					'Blanditiis praesentium voluptatum deleniti atque corrupti.',
-					'Maecenas tempus tellus eget.'
-				],
-				'technologies' => [
-					'jQuery',
-					'Webpack',
-					'HTML/SASS',
-					'PostgresSQL'
-				]
+				'title' => 'IT Support',
+				'organization' => 'Maysville Community and Technical College',
+				'years' => '2021 - Present',
+				'description' => 'A student worker position in the IT department at Maysville Community and Technical College. Consists of assisting with computer problems, network issues, and printing issues.'
+			],
+			[
+				'title' => 'Work-Based Learning IT Job',
+				'organization' => 'Bracken County High School',
+				'years' => '2020 - 2021',
+				'description' => 'A Work-Based learning IT job completed during Senior year of High School. Consisted of assisting students and teachers with computer problems and repairing Chromebooks.'
 			]
 		],
 		'skills' => [
-			'Angular',
+			'C#',
+			'Java',
+			'JavaScript',
 			'Node.js',
-			'React',
-			'JavaScript'
+			'HTML/CSS'
 		],
 		'others' => [
-			'Wireframing',
-			'Git',
-			'Unit Testing',
-			'Balsamiq',
-			'Shopify'
+			'Git'
 		],
 		'education' => [
 			[
-				'degree' => 'ASc in Information Technology',
+				'degree' => 'BSc Applied Software Engineering',
+				'college' => 'Northern Kentucky University',
+				'years' => '2023 - 2025'
+			],
+			[
+				'degree' => 'ASc Information Technology',
 				'college' => 'Maysville Community and Technical College',
-				'years' => '2020 - 2023'
+				'years' => '2021 - 2022'
 			]
 		],
 		'awards' => [
 			[
-				'name' => 'Woodmen scholarship',
-				'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+				'name' => 'WoodmenLife Focus Forward Scholarship',
+				'description' => 'A scholarship earned during senior year.'
 			]
 		],
 		'languages' => [
@@ -211,22 +222,15 @@ $members = [
 			]
 		],
 		'interests' => [
-			'Climbing',
-			'Snowboarding',
-			'Cooking'
+			'Gaming',
+			'Running',
+			'Movies'
 		],
 		'projects' => [
 			[
-				'img' => 'https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg',
-				'name' => 'Project Name',
-				'description' => 'Project description for your project',
-				'link' => 'https://github.com/Cjking57893/ASE230-Assignment01'
-			],
-			[
-				'img' => 'https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg',
-				'name' => 'Project Name',
-				'description' => 'Project description for your projet',
-				'link' => 'https://github.com/Cjking57893/ASE230-Assignment01'
+				'name' => 'Midwest Music Site',
+				'description' => 'A website to post reviews of concerts.',
+				'link' => 'https://github.com/AndrewOneal/MidwestMusic'
 			]
 		]
 	],
@@ -564,7 +568,7 @@ $members = [
 							echo
 								'<div class="col-md-4">
 										<div class="card">
-											<img src="path-to-project-image2.jpg" alt="Project 2" class="card-img-top">
+											<img src="path-to-project-image2.jpg" alt="Project 1" class="card-img-top">
 											<div class="card-body">
 												<h5 class="card-title">' . $members[$_GET['index']]['projects'][$i]['name'] . '</h5>
 												<p class="card-text">' . $members[$_GET['index']]['projects'][$i]['description'] . '</p>
