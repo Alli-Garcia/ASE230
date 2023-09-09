@@ -2,6 +2,154 @@
 $members = [
 	[
 		'profilePicture' => 'assets/images/profile.jpg',
+		'name' => 'Kori Mcclure',
+		'desiredJob' => '',
+		'email' => '',
+		'phone' => '',
+		'linkedin' => '',
+		'github' => '',
+		'website' => '',
+		'summary' => '',
+		'experience' => [
+			[
+				'title' => '',
+				'organization' => '',
+				'years' => '',
+				'description' => '',
+				'achievements' => [
+					'',
+					'',
+					'',
+					''
+				],
+				'technologies' => [
+					'',
+					'',
+					'',
+					''
+				]
+			]
+		],
+		'skills' => [
+			'',
+			'',
+			'',
+			''
+		],
+		'others' => [
+			'',
+			'',
+			'',
+			'',
+			''
+		],
+		'education' => [
+			[
+				'degree' => '',
+				'college' => '',
+				'years' => ''
+			]
+		],
+		'awards' => [
+			[
+				'name' => '',
+				'description' => ''
+			]
+		],
+		'languages' => [
+			[
+				'name' => '',
+				'type' => ''
+			]
+		],
+		'interests' => [
+			'',
+			'',
+			''
+		],
+		'projects' => [
+			'img' => '',
+			'name' => '',
+			'description' => '',
+			'link' => ''
+		]
+	],
+	[
+		'profilePicture' => 'assets/images/profile.jpg',
+		'name' => 'Alli Garcia',
+		'desiredJob' => '',
+		'email' => '',
+		'phone' => '',
+		'linkedin' => '',
+		'github' => '',
+		'website' => '',
+		'summary' => '',
+		'experience' => [
+			[
+				'title' => '',
+				'organization' => '',
+				'years' => '',
+				'description' => '',
+				'achievements' => [
+					'',
+					'',
+					'',
+					''
+				],
+				'technologies' => [
+					'',
+					'',
+					'',
+					''
+				]
+			]
+		],
+		'skills' => [
+			'',
+			'',
+			'',
+			''
+		],
+		'others' => [
+			'',
+			'',
+			'',
+			'',
+			''
+		],
+		'education' => [
+			[
+				'degree' => '',
+				'college' => '',
+				'years' => ''
+			]
+		],
+		'awards' => [
+			[
+				'name' => '',
+				'description' => ''
+			]
+		],
+		'languages' => [
+			[
+				'name' => '',
+				'type' => ''
+			]
+		],
+		'interests' => [
+			'',
+			'',
+			''
+		],
+		'projects' => [
+			'img' => '',
+			'name' => '',
+			'description' => '',
+			'link' => ''
+		]
+	],
+	[
+		'profilePicture' => 'assets/images/profile.jpg',
 		'name' => 'Cody King',
 		'desiredJob' => 'Software Developer',
 		'email' => '12314213@gmail.com',
@@ -154,154 +302,6 @@ $members = [
 			'description' => '',
 			'link' => ''
 		]
-	],
-	[
-		'profilePicture' => 'assets/images/profile.jpg',
-		'name' => 'Alli Garcia',
-		'desiredJob' => '',
-		'email' => '',
-		'phone' => '',
-		'linkedin' => '',
-		'github' => '',
-		'website' => '',
-		'summary' => '',
-		'experience' => [
-			[
-				'title' => '',
-				'organization' => '',
-				'years' => '',
-				'description' => '',
-				'achievements' => [
-					'',
-					'',
-					'',
-					''
-				],
-				'technologies' => [
-					'',
-					'',
-					'',
-					''
-				]
-			]
-		],
-		'skills' => [
-			'',
-			'',
-			'',
-			''
-		],
-		'others' => [
-			'',
-			'',
-			'',
-			'',
-			''
-		],
-		'education' => [
-			[
-				'degree' => '',
-				'college' => '',
-				'years' => ''
-			]
-		],
-		'awards' => [
-			[
-				'name' => '',
-				'description' => ''
-			]
-		],
-		'languages' => [
-			[
-				'name' => '',
-				'type' => ''
-			]
-		],
-		'interests' => [
-			'',
-			'',
-			''
-		],
-		'projects' => [
-			'img' => '',
-			'name' => '',
-			'description' => '',
-			'link' => ''
-		]
-	],
-	[
-		'profilePicture' => 'assets/images/profile.jpg',
-		'name' => 'Kori Mcclure',
-		'desiredJob' => '',
-		'email' => '',
-		'phone' => '',
-		'linkedin' => '',
-		'github' => '',
-		'website' => '',
-		'summary' => '',
-		'experience' => [
-			[
-				'title' => '',
-				'organization' => '',
-				'years' => '',
-				'description' => '',
-				'achievements' => [
-					'',
-					'',
-					'',
-					''
-				],
-				'technologies' => [
-					'',
-					'',
-					'',
-					''
-				]
-			]
-		],
-		'skills' => [
-			'',
-			'',
-			'',
-			''
-		],
-		'others' => [
-			'',
-			'',
-			'',
-			'',
-			''
-		],
-		'education' => [
-			[
-				'degree' => '',
-				'college' => '',
-				'years' => ''
-			]
-		],
-		'awards' => [
-			[
-				'name' => '',
-				'description' => ''
-			]
-		],
-		'languages' => [
-			[
-				'name' => '',
-				'type' => ''
-			]
-		],
-		'interests' => [
-			'',
-			'',
-			''
-		],
-		'projects' => [
-			'img' => '',
-			'name' => '',
-			'description' => '',
-			'link' => ''
-		]
 	]
 ];
 
@@ -316,7 +316,7 @@ $members = [
 	<meta charset='utf-8'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-	<meta name='description' content='Your name's resume'>
+	<meta name='description' content='Your name' s resume'>
 	<meta name='author' content='Your name'>
 	<link rel='shortcut icon' href='favicon.ico'>
 
