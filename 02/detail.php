@@ -310,7 +310,7 @@ $members = [
 <html lang='en'>
 
 <head>
-	<title>Your name's Resume</title>
+	<title><?= $members[$_GET['index']]['name']; ?>'s Resume</title>
 
 	<!-- Meta -->
 	<meta charset='utf-8'>
