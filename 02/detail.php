@@ -149,7 +149,7 @@ $members = [
 		]
 	],
 	[
-		'profilePicture' => 'assets/images/profile.jpg',
+		'profilePicture' => 'assets/images/profile2.jpg',
 		'name' => 'Cody King',
 		'desiredJob' => 'Software Developer',
 		'email' => '12314213@gmail.com',

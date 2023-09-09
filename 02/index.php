@@ -19,9 +19,9 @@ $team=[
 	[
 		'photo'=>'assets/images/profile2.jpg',
 		'name'=>'Cody King',
-		'role'=>'filler',
-		'secondaryInfo'=>'filler',
-		'profile'=>'filler'		
+		'role'=>'ASE Student at NKU',
+		'secondaryInfo'=>'Team Member',
+		'profile'=>'View Profile'		
 	],
 	[
 		'photo'=>'assets/images/profile3.jpg',
