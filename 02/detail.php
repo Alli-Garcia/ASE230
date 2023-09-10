@@ -75,7 +75,7 @@ $members = [
 		]
 	],
 	[
-		'profilePicture' => 'assets/images/profile.jpg',
+		'profilePicture' => 'assets/images/profile1.jpg',
 		'name' => 'Alli Garcia',
 		'desiredJob' => 'Digital Technology Intern',
 		'email' => 'garciaa12@mymail.nku.edu',
@@ -235,13 +235,14 @@ $members = [
 		]
 	],
 	[
-		'profilePicture' => 'assets/images/profile.jpg',
+		'profilePicture' => 'assets/images/profile3.jpg',
 		'name' => 'Billon Deckerich',
 		'desiredJob' => 'Cybersecurity Specialist',
 		'email' => 'bdeckrick@outlook.com',
 		'phone' => '555-242-9113',
 		'linkedin' => 'https://www.linkedin.com/in/dillon-beckerich',
 		'github' => 'https://github.com/NoirJazz',
+		'website' => 'https://github.com/NoirJazz',
 		'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 		'experience' => [
 			[
@@ -341,7 +342,7 @@ $members = [
 			<header class='resume-header pt-4 pt-md-0'>
 				<div class='row'>
 					<div class='col-block col-md-auto resume-picture-holder text-center text-md-start'>
-						<img class='picture' src='assets/images/profile.jpg' alt=''>
+						<?= '<img class="picture" src="' . $members[$_GET['index']]['profilePicture'] . '" alt="">' ?>
 					</div><!--//col-->
 					<div class='col'>
 						<div class='row p-4 justify-content-center justify-content-md-between'>
