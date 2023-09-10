@@ -172,7 +172,7 @@ $members = [
 		'linkedin' => 'https://www.linkedin.com/in/cody-king-32b35a231/',
 		'github' => 'https://github.com/Cjking57893',
 		'website' => 'https://cjking57893.github.io/personal-website/',
-		'summary' => 'Currently I\'m attending Northern Kentucky University with major in Applied Software Engineering. I transferred from a community college after getting my Associate\'s degree. \n\n Some languages I\'m proficient in are C#, Javascript, and HTML & CSS. I also have experience using Git and Github.',
+		'summary' => 'Currently I\'m attending Northern Kentucky University with major in Applied Software Engineering. I transferred from a community college after getting my Associate\'s degree. Some languages I\'m proficient in are C#, Javascript, and HTML & CSS. I also have experience using Git and Github.',
 		'experience' => [
 			[
 				'title' => 'IT Support',
@@ -349,26 +349,26 @@ $members = [
 								<h1 class='name mt-0 mb-1 text-white text-uppercase text-uppercase'>
 									<?= $members[$_GET['index']]['name'] ?>
 								</h1>
-								<div class='title mb-3'>Your desired job title</div>
+								<div class='title mb-3'><?= $members[$_GET['index']]['desiredJob'] ?></div>
 								<ul class='list-unstyled'>
 									<li class='mb-2'><a class='text-link' href='#'><i class='far fa-envelope fa-fw me-2'
-												data-fa-transform='grow-3'></i>your@email.com</a></li>
+												data-fa-transform='grow-3'></i><?= $members[$_GET['index']]['email'] ?></a></li>
 									<li><a class='text-link' href='#'><i class='fas fa-mobile-alt fa-fw me-2'
-												data-fa-transform='grow-6'></i>0123 456 78900</a></li>
+												data-fa-transform='grow-6'></i><?= $members[$_GET['index']]['phone'] ?></a></li>
 								</ul>
 							</div><!--//primary-info-->
 							<div class='secondary-info col-auto mt-2'>
 								<ul class='resume-social list-unstyled'>
 									<li class='mb-3'><a class='text-link' href='#'><span
 												class='fa-container text-center me-2'><i
-													class='fab fa-linkedin-in fa-fw'></i></span>linkedin.com/in/yourlink</a>
+													class='fab fa-linkedin-in fa-fw'></i></span><?= $members[$_GET['index']]['linkedin'] ?></a>
 									</li>
 									<li class='mb-3'><a class='text-link' href='#'><span
 												class='fa-container text-center me-2'><i
-													class='fab fa-github-alt fa-fw'></i></span>github.com/yourhandle</a>
+													class='fab fa-github-alt fa-fw'></i></span><?= $members[$_GET['index']]['github'] ?></a>
 									</li>
 									<li><a class='text-link' href='#'><span class='fa-container text-center me-2'><i
-													class='fas fa-globe'></i></span>yourwebsite.com</a></li>
+													class='fas fa-globe'></i></span><?= $members[$_GET['index']]['website'] ?></a></li>
 								</ul>
 							</div><!--//secondary-info-->
 						</div><!--//row-->
@@ -380,16 +380,7 @@ $members = [
 				<section class='resume-section summary-section mb-5'>
 					<h2 class='resume-section-title text-uppercase font-weight-bold pb-3 mb-3'>Summary</h2>
 					<div class='resume-section-content'>
-						<p class='mb-0'>Summarise your education and professional experience here. Add a couple of fun
-							facts. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue elit ut nisi
-							vehicula iaculis. Integer porta nisi erat, quis gravida quam dignissim ut. Nullam tincidunt
-							mollis finibus. Vestibulum et diam vel tellus blandit convallis non id mauris. Curabitur
-							feugiat tincidunt ante, ut iaculis sem. Sed eleifend fringilla diam, quis vehicula tellus
-							fringilla sed. In sagittis commodo ipsum pulvinar sagittis. Ut et turpis sit amet erat
-							elementum convallis ac eu ipsum. Aenean varius eget mi in mollis. Integer tempus diam
-							libero, id blandit neque aliquam non. Maecenas eleifend leo ut pellentesque bibendum.
-							Phasellus consectetur facilisis nunc, at ultricies nisi eleifend eget. Fusce molestie et
-							orci non pulvinar. Aenean ac tristique orci, vitae viverra mi.</p>
+						<p class='mb-0'><?= $members[$_GET['index']]['summary'] ?></p>
 					</div>
 				</section><!--//summary-section-->
 				<div class='row'>
