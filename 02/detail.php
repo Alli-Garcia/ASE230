@@ -131,7 +131,7 @@ $members = [
 				'name' => 'English',
 				'type' => 'Primary'
 			],
-			[	
+			[
 				'name' => 'Spanish',
 				'type' => 'Secondary'
 			]
@@ -254,51 +254,52 @@ $members = [
 					'Over $5,000 dollars raised in 2023 so far.',
 					'The quick brown fox jumped over the lazy dog.',
 
-				
-			]
-		],
-		'skills' => [
-			'Python',
-			'Linux',
-			'>HTML/CSS',
-			'ctl+c , ctrl+ v'
-		],
-		'others' => [
-			'Sleuth Kit/Autopsy',
-			'Wireshark',
-			'Nmap',
-			'Windows',
-			'Kali Linux'
-		],
-		'education' => [
-			[
-				'degree' => 'Masters degree in underwater basket weaving',
-				'college' => 'Havad',
-				'years' => '1993 - 1998'
-			]
-		],
-		'awards' => [
-			[
+
+				]
+			],
+			'skills' => [
+				'Python',
+				'Linux',
+				'>HTML/CSS',
+				'ctl+c , ctrl+ v'
+			],
+			'others' => [
+				'Sleuth Kit/Autopsy',
+				'Wireshark',
+				'Nmap',
+				'Windows',
+				'Kali Linux'
+			],
+			'education' => [
+				[
+					'degree' => 'Masters degree in underwater basket weaving',
+					'college' => 'Havad',
+					'years' => '1993 - 1998'
+				]
+			],
+			'awards' => [
+				[
+					'name' => '',
+					'description' => ''
+				]
+			],
+			'languages' => [
+				[
+					'name' => 'English',
+					'type' => 'Native speaker'
+				]
+			],
+			'interests' => [
+				'Vintage Computers',
+				'Playing Cards',
+				'Metrology'
+			],
+			'projects' => [
+				'img' => '',
 				'name' => '',
-				'description' => ''
+				'description' => '',
+				'link' => ''
 			]
-		],
-		'languages' => [
-			[
-				'name' => 'English',
-				'type' => 'Native speaker'
-			]
-		],
-		'interests' => [
-			'Vintage Computers',
-			'Playing Cards',
-			'Metrology'
-		],
-		'projects' => [
-			'img' => '',
-			'name' => '',
-			'description' => '',
-			'link' => ''
 		]
 	]
 ];
@@ -308,7 +309,9 @@ $members = [
 <html lang='en'>
 
 <head>
-	<title><?= $members[$_GET['index']]['name']; ?>'s Resume</title>
+	<title>
+		<?= $members[$_GET['index']]['name']; ?>'s Resume
+	</title>
 
 	<!-- Meta -->
 	<meta charset='utf-8'>
