@@ -254,13 +254,7 @@ $members = [
 					'Over $5,000 dollars raised in 2023 so far.',
 					'The quick brown fox jumped over the lazy dog.',
 
-				],
-				'technologies' => [
-					'',
-					'',
-					'',
-					''
-				]
+				
 			]
 		],
 		'skills' => [
