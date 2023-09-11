@@ -3,7 +3,7 @@
 
 $team = [
     [
-        'photo' => 'assets/images/profile.jpg',
+        'photo' => 'assets/images/profile0.jpg',
         'name' => 'Kori McClure',
         'role' => 'CIT Student at NKU',
         'secondaryInfo' => 'Team Member',
