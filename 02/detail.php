@@ -3,13 +3,13 @@ $members = [
 	[
 		'profilePicture' => 'assets/images/profile.jpg',
 		'name' => 'Kori Mcclure',
-		'desiredJob' => '',
-		'email' => '',
-		'phone' => '',
+		'desiredJob' => 'Software Engineering Intern',
+		'email' => 'mcclureg1@nku.edu',
+		'phone' => '859-270-3504',
 		'linkedin' => '',
-		'github' => '',
+		'github' => 'https://github.com/ganmcc6nku',
 		'website' => '',
-		'summary' => '',
+		'summary' => 'Seeking internship in software engineering or IT. Proficient in Java.',
 		'experience' => [
 			[
 				'title' => '',
@@ -31,10 +31,9 @@ $members = [
 			]
 		],
 		'skills' => [
-			'',
-			'',
-			'',
-			''
+			'Java',
+			'C#',
+			'SQL'			
 		],
 		'others' => [
 			'',
@@ -45,8 +44,8 @@ $members = [
 		],
 		'education' => [
 			[
-				'degree' => '',
-				'college' => '',
+				'degree' => 'B.S. Computer Information Technologies',
+				'college' => 'Northern Kentucky University',
 				'years' => ''
 			]
 		],
@@ -58,14 +57,18 @@ $members = [
 		],
 		'languages' => [
 			[
-				'name' => '',
-				'type' => ''
+				'name' => 'English',
+				'type' => 'Native'
+			]
+			[
+				'name' => 'Japanese',
+				'type' => 'Elementary'
 			]
 		],
 		'interests' => [
-			'',
-			'',
-			''
+			'Snowboarding',
+			'Games'
+			
 		],
 		'projects' => [
 			'img' => '',
