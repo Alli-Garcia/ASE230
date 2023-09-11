@@ -3,11 +3,11 @@
 
 $team = [
     [
-        'photo' => 'assets/images/profile0.jpg',
+        'photo' => 'assets/images/profile.jpg',
         'name' => 'Kori McClure',
-        'role' => 'C.E.F.U.B.A.R.',
-        'secondaryInfo' => 'filler',
-        'profile' => 'filler'
+        'role' => 'CIT Student at NKU',
+        'secondaryInfo' => 'Team Member',
+        'profile' => 'View Profile'
     ],
     [
         'photo' => 'assets/images/profile1.jpg',
