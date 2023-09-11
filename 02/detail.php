@@ -6,34 +6,34 @@ $members = [
 		'desiredJob' => 'Software Engineering Intern',
 		'email' => 'mcclureg1@nku.edu',
 		'phone' => '859-270-3504',
-		'linkedin' => '',
+		'linkedin' => 'linkedin.com/in/yourlink',
 		'github' => 'https://github.com/ganmcc6nku',
-		'website' => '',
+		'website' => 'yourwebsite.com',
 		'summary' => 'Seeking internship in software engineering or IT. Proficient in Java.',
 		'experience' => [
 			[
-				'title' => '',
-				'organization' => '',
-				'years' => '',
-				'description' => '',
+				'title' => 'Lead Developer',
+				'organization' => 'Startup Hub',
+				'years' => '2023 - Present',
+				'description' => 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.',
 				'achievements' => [
-					'',
-					'',
-					'',
-					''
+					'Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.',
+					'At vero eos et accusamus et iusto odio dignissimos.',
+					'Blanditiis praesentium voluptatum deleniti atque corrupti.',
+					'Maecenas tempus tellus eget.'
 				],
 				'technologies' => [
-					'',
-					'',
-					'',
-					''
+					'Angular',
+					'Python',
+					'jQuery',
+					'Webpack'
 				]
 			]
 		],
 		'skills' => [
 			'Java',
 			'C#',
-			'SQL'			
+			'SQL'
 		],
 		'others' => [
 			'',
@@ -51,15 +51,15 @@ $members = [
 		],
 		'awards' => [
 			[
-				'name' => '',
-				'description' => ''
+				'name' => 'Award Name Lorem',
+				'description' => 'Award desc goes here, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.'
 			]
 		],
 		'languages' => [
 			[
 				'name' => 'English',
 				'type' => 'Native'
-			]
+			],
 			[
 				'name' => 'Japanese',
 				'type' => 'Elementary'
@@ -68,13 +68,15 @@ $members = [
 		'interests' => [
 			'Snowboarding',
 			'Games'
-			
+
 		],
 		'projects' => [
-			'img' => '',
-			'name' => '',
-			'description' => '',
-			'link' => ''
+			[
+				'img' => '',
+				'name' => 'Project 1',
+				'description' => 'Brief description of Project 1.',
+				'link' => ''
+			]
 		]
 	],
 	[
@@ -243,7 +245,7 @@ $members = [
 		'desiredJob' => 'Cybersecurity Specialist',
 		'email' => 'bdeckrick@outlook.com',
 		'phone' => '555-242-9113',
-		'linkedin' => 'https://www.linkedin.com/in/dillon-beckerich',
+		'linkedin' => 'https://shorturl.at/fkyJ9',
 		'github' => 'https://github.com/NoirJazz',
 		'website' => 'https://github.com/NoirJazz',
 		'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -257,54 +259,54 @@ $members = [
 					'Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.',
 					'Over $5,000 dollars raised in 2023 so far.',
 					'The quick brown fox jumped over the lazy dog.',
-
-
-				]
+				],
 			],
-			'skills' => [
-				'Python',
-				'Linux',
-				'>HTML/CSS',
-				'ctl+c , ctrl+ v'
-			],
-			'others' => [
-				'Sleuth Kit/Autopsy',
-				'Wireshark',
-				'Nmap',
-				'Windows',
-				'Kali Linux'
-			],
-			'education' => [
-				[
-					'degree' => 'Masters degree in underwater basket weaving',
-					'college' => 'Havad',
-					'years' => '1993 - 1998'
-				]
-			],
-			'awards' => [
-				[
-					'name' => '',
-					'description' => ''
-				]
-			],
-			'languages' => [
-				[
-					'name' => 'English',
-					'type' => 'Native speaker'
-				]
-			],
-			'interests' => [
-				'Vintage Computers',
-				'Playing Cards',
-				'Metrology'
-			],
-			'projects' => [
-				'img' => '',
-				'name' => '',
-				'description' => '',
-				'link' => ''
+		],
+		'skills' => [
+			'Python',
+			'Linux',
+			'>HTML/CSS',
+			'ctl+c , ctrl+ v'
+		],
+		'others' => [
+			'Sleuth Kit/Autopsy',
+			'Wireshark',
+			'Nmap',
+			'Windows',
+			'Kali Linux'
+		],
+		'education' => [
+			[
+				'degree' => 'Masters degree in underwater basket weaving',
+				'college' => 'Havad',
+				'years' => '1993 - 1998'
 			]
-		]
+		],
+		'awards' => [
+			[
+				'name' => 'Award Name Lorem',
+				'description' => 'Award desc goes here, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.'
+			]
+		],
+		'languages' => [
+			[
+				'name' => 'English',
+				'type' => 'Native speaker'
+			]
+		],
+		'interests' => [
+			'Vintage Computers',
+			'Playing Cards',
+			'Metrology'
+		],
+		'projects' => [
+			[
+				'img' => '',
+				'name' => 'Project 1',
+				'description' => 'Brief description of Project 1.',
+				'link' => ''
+			],
+		],
 	]
 ];
 
@@ -353,26 +355,38 @@ $members = [
 								<h1 class='name mt-0 mb-1 text-white text-uppercase text-uppercase'>
 									<?= $members[$_GET['index']]['name'] ?>
 								</h1>
-								<div class='title mb-3'><?= $members[$_GET['index']]['desiredJob'] ?></div>
+								<div class='title mb-3'>
+									<?= $members[$_GET['index']]['desiredJob'] ?>
+								</div>
 								<ul class='list-unstyled'>
 									<li class='mb-2'><a class='text-link' href='#'><i class='far fa-envelope fa-fw me-2'
-												data-fa-transform='grow-3'></i><?= $members[$_GET['index']]['email'] ?></a></li>
+												data-fa-transform='grow-3'></i>
+											<?= $members[$_GET['index']]['email'] ?>
+										</a></li>
 									<li><a class='text-link' href='#'><i class='fas fa-mobile-alt fa-fw me-2'
-												data-fa-transform='grow-6'></i><?= $members[$_GET['index']]['phone'] ?></a></li>
+												data-fa-transform='grow-6'></i>
+											<?= $members[$_GET['index']]['phone'] ?>
+										</a></li>
 								</ul>
 							</div><!--//primary-info-->
 							<div class='secondary-info col-auto mt-2'>
 								<ul class='resume-social list-unstyled'>
 									<li class='mb-3'><a class='text-link' href='#'><span
 												class='fa-container text-center me-2'><i
-													class='fab fa-linkedin-in fa-fw'></i></span><?= $members[$_GET['index']]['linkedin'] ?></a>
+													class='fab fa-linkedin-in fa-fw'></i></span>
+											<?= $members[$_GET['index']]['linkedin'] ?>
+										</a>
 									</li>
 									<li class='mb-3'><a class='text-link' href='#'><span
 												class='fa-container text-center me-2'><i
-													class='fab fa-github-alt fa-fw'></i></span><?= $members[$_GET['index']]['github'] ?></a>
+													class='fab fa-github-alt fa-fw'></i></span>
+											<?= $members[$_GET['index']]['github'] ?>
+										</a>
 									</li>
 									<li><a class='text-link' href='#'><span class='fa-container text-center me-2'><i
-													class='fas fa-globe'></i></span><?= $members[$_GET['index']]['website'] ?></a></li>
+													class='fas fa-globe'></i></span>
+											<?= $members[$_GET['index']]['website'] ?>
+										</a></li>
 								</ul>
 							</div><!--//secondary-info-->
 						</div><!--//row-->
@@ -384,7 +398,9 @@ $members = [
 				<section class='resume-section summary-section mb-5'>
 					<h2 class='resume-section-title text-uppercase font-weight-bold pb-3 mb-3'>Summary</h2>
 					<div class='resume-section-content'>
-						<p class='mb-0'><?= $members[$_GET['index']]['summary'] ?></p>
+						<p class='mb-0'>
+							<?= $members[$_GET['index']]['summary'] ?>
+						</p>
 					</div>
 				</section><!--//summary-section-->
 				<div class='row'>
@@ -581,8 +597,8 @@ $members = [
 
 	<footer class='footer text-center pt-2 pb-5'>
 		<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-		<small class='copyright'>Designed with <span class='sr-only'>love</span><i class='fas fa-heart'></i> by Your
-			names</small>
+		<small class='copyright'>Designed with <span class='sr-only'>love</span><i class='fas fa-heart'></i> by Kori,
+			Alli, Cody, and Dillon</small>
 	</footer>
 
 
