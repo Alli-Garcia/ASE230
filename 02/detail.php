@@ -1,7 +1,7 @@
 <?php
 $members = [
 	[
-		'profilePicture' => 'assets/images/profile.jpg',
+		'profilePicture' => 'assets/images/profile0.jpg',
 		'name' => 'Kori Mcclure',
 		'desiredJob' => 'Software Engineering Intern',
 		'email' => 'mcclureg1@nku.edu',
